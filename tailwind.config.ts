@@ -137,6 +137,32 @@ export default {
 						transform: 'scale(2)',
 						opacity: '0'
 					}
+				},
+				
+				// Cog machine orb keyframes
+				"rotate-clockwise": {
+					"0%": { transform: "rotate(0deg)" },
+					"100%": { transform: "rotate(360deg)" },
+				},
+				"rotate-counter-clockwise": {
+					"0%": { transform: "rotate(0deg)" },
+					"100%": { transform: "rotate(-360deg)" },
+				},
+				"listening-halo": {
+					"0%, 100%": { transform: "scale(1)", opacity: "0.6" },
+					"50%": { transform: "scale(1.1)", opacity: "0.8" },
+				},
+				"breathe": {
+					"0%, 100%": { transform: "scale(1)" },
+					"50%": { transform: "scale(1.03)" },
+				},
+				"fade-in": {
+					"0%": { opacity: "0", transform: "translateY(10px)" },
+					"100%": { opacity: "1", transform: "translateY(0)" },
+				},
+				"slide-in-from-right": {
+					"0%": { transform: "translateX(100%)" },
+					"100%": { transform: "translateX(0)" },
 				}
 			},
 			animation: {
@@ -146,7 +172,18 @@ export default {
 				'rotate-ring': 'rotate-ring 20s linear infinite',
 				'fade-in-up': 'fade-in-up 0.5s ease-out',
 				'scale-in': 'scale-in 0.3s ease-out',
-				'ripple': 'ripple 1s ease-out infinite'
+				'ripple': 'ripple 1s ease-out infinite',
+				
+				// Cog machine orb animations
+				"rotate-clockwise": "rotate-clockwise 60s linear infinite",
+				"rotate-counter-clockwise": "rotate-counter-clockwise 40s linear infinite",
+				"listening-halo": "listening-halo 1s ease-in-out infinite",
+				"breathe": "breathe 2s ease-in-out infinite",
+				"ripple-1": "ripple 0.6s ease-out infinite",
+				"ripple-2": "ripple 0.6s ease-out 0.2s infinite",
+				"ripple-3": "ripple 0.6s ease-out 0.4s infinite",
+				"fade-in": "fade-in 0.3s ease-out",
+				"slide-in-from-right": "slide-in-from-right 0.3s ease-out",
 			},
 			boxShadow: {
 				'glow': 'var(--glow-primary)',

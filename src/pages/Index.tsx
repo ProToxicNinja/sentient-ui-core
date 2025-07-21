@@ -1,7 +1,7 @@
-import { AIAssistant } from "@/components/AIAssistant";
+import { ArtisanLayout } from "@/components/ArtisanLayout";
 
 const Index = () => {
-  return <AIAssistant />;
+  return <ArtisanLayout />;
 };
 
 export default Index;
